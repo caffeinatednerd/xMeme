@@ -11,8 +11,9 @@ sudo apt update
 # Install the MongoDB packages
 sudo apt install -y mongodb-org
 # Start and verify the service
-sudo systemctl start mongod
-sudo systemctl status mongod
+sudo systemctl start mongod &
+sudo systemctl status mongod &
+
 # Enable the service start on every reboot
 sudo systemctl enable mongod
 
