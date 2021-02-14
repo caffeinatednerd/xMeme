@@ -75,19 +75,15 @@ app.route("/memes")
           meme.save(function(err, saved_meme){
               if(!err) {
                 const meme_id = saved_meme._id;
-                // res.send(meme_id);
-                console.log(meme_id);
+                res.status(201).send(meme_id);
 
-                res.status(201).redirect("/");
+                // res.status(201).redirect("/");
               } else {
                 console.log(err);
               }
           });
         } else {
-          res.status(409).json({
-            status: "409",
-            message: "Meme with same parameters already exists"
-          });
+          res.status(409);
         }
       }
     });
@@ -107,10 +103,7 @@ app.route("/memes/:id")
           url: foundMeme.url,
         });
       } else {
-        res.status(404).send({
-          status: 404,
-          message: 'Meme not found'
-        });
+        res.status(404);
       }
     });
   });
