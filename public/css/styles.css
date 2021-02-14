@@ -1,0 +1,16 @@
+
+img {
+  object-fit:contain;
+  margin: auto;
+  text-align: center;
+}
+
+.created {
+  text-align: center;
+  font-family: cursive;
+}
+
+h1 {
+  font-family: cursive;
+  text-align: center;
+}
