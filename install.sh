@@ -19,9 +19,17 @@ sudo systemctl enable mongod
 
 
 # Install NodeJS and NPM using nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-. ~/.nvm/nvm.sh
-nvm install node
+# curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+# . ~/.nvm/nvm.sh
+# nvm install node
+
+sudo apt update
+
+cd ~
+curl -sL https://deb.nodesource.com/setup_12.19.0 -o nodesource_setup.sh
+sudo bash nodesource_setup.sh
+sudo apt-get install nodejs -y
+sudo apt install build-essential -y
 
 # node -v
 # npm -v

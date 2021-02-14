@@ -1,8 +1,10 @@
 #!/bin/bash
 
+# git clone the repo
+# cd to the cloned repo directory
+
 # Run the user’s installation steps which will install any necessary dependencies required for the server to run, with sudo permission
 chmod +x install.sh
-
 sudo ./install.sh
 
 chmod +x sleep.sh
