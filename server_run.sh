@@ -1,3 +1,3 @@
 #!/bin/bash
-
-node app.js
+npm install
+node --no-deprecation app.js
