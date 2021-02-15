@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>XMeme</title>
+    <link rel="icon" href="images/meme-icon.svg">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
@@ -11,9 +12,9 @@
   </head>
   <body class="#f9fbe7 lime lighten-5">
 
-    <h1> Meme Stream </h1>
+    <h1> X Meme </h1>
     <div class="created">
-      by <a href="https://www.linkedin.com/caffeinatednerd">caffeinatedNerd</a>
+      by <a href="https://www.linkedin.com/in/caffeinatednerd">caffeinatedNerd</a>
     </div>
 
     <div class="row">
@@ -61,7 +62,8 @@
           <div class="card">
             <!-- Card Content -->
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="responsive-img" src="<%= newListItems[i].url %>">
+              <!-- <img class="responsive-img" src="<%= newListItems[i].url %>"> -->
+              <img src="<%= newListItems[i].url %>">
             </div>
             <div class="card-content">
               <span class="card-title grey-text text-darken-4"><%= newListItems[i].name %></span>

@@ -1,9 +1,34 @@
 
-img {
+/* img {
   object-fit:contain;
   margin: auto;
   text-align: center;
+  vertical-align: center;
+} */
+
+/* ==================== */
+img {
+  vertical-align: middle;
+  border-style: none;
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
 }
+
+.card {
+  box-shadow: 0 4px 8px 0 grey;
+  border-radius: 10px 10px 10px 10px;
+  /* max-width: 300px; */
+  /* margin: auto; */
+  /* text-align: center; */
+  font-family: arial;
+}
+/* =========================== */
+
+label {
+  color: black;
+}
+
 
 .created {
   text-align: center;
