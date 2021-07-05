@@ -1,4 +1,4 @@
 # xMeme - Stream Memes
-### Built using NodeJS, EJS and Materialize CSS.
+### A fully responsive meme streaming application build using EJS and Materialize CSS.
 
-Deployed at https://xmeme-prabhu.herokuapp.com/
+Deployed [here](https://xmeme-prabhu.herokuapp.com/)
